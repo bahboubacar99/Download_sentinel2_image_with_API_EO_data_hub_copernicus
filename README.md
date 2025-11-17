@@ -2,18 +2,18 @@
 This Python script automates the search and download of Sentinel-2 images (L1C level or L2A) from the Copernicus Data Space Ecosystem. The data is filtered by geographical area, date range and cloud cover rate, then retrieved via S3 URLs and organised locally in a structured manner.
 
 ## Features
-- OAuth2 authentication and Keycloak token retrieval for Copernicus APIs.
-- Search for Sentinel-2 products by criteria (bbox, date, cloud cover, etc.).
-- Secure download of .SAFE files via S3 access.
-- Automatic organisation and relocation of downloaded files.
-- Deletion of source files for efficient disk space management.
+- OAuth2 authentication and Keycloak token retrieval for Copernicus APIs. </br>
+- Search for Sentinel-2 products by criteria (bbox, date, cloud cover, etc.). </br>
+- Secure download of .SAFE files via S3 access. </br>
+- Automatic organisation and relocation of downloaded files. </br>
+- Deletion of source files for efficient disk space management. </br>
 
 ## Prerequisites
-- Python 3.8 or higher
-- Copernicus Data Space access (client_id/client_secret)
-- Copernicus S3 access (AWS Access Key/Secret)
-- Python packages: oauthlib, requests-oauthlib, requests, boto3, shutil
-- Create a user_inputs.py file with your login credentials.
+- Python 3.8 or higher </br>
+- Copernicus Data Space access (client_id/client_secret) </br>
+- Copernicus S3 access (AWS Access Key/Secret)</br>
+- Python packages: oauthlib, requests-oauthlib, requests, boto3, shutil </br>
+- Create a user_inputs.py file with your login credentials. </br>
 - 
 ## Install the necessary libraries
 pip install oauthlib requests-oauthlib requests boto3
@@ -21,10 +21,10 @@ pip install oauthlib requests-oauthlib requests boto3
 ## Path configuration
 Modify these variables in the script according to your folder structure:
 
-download_folder: temporary folder for initial download
-folder_path: folder for saving text and JSON query files
-sentinel_2_folder: where .SAFE files are stored immediately after download
-data_sentinel_folder: final structured destination for .SAFE files
+- download_folder: temporary folder for initial download </br>
+- folder_path: folder for saving text and JSON query files </br>
+- sentinel_2_folder: where .SAFE files are stored immediately after download </br>
+- data_sentinel_folder: final structured destination for .SAFE files </br>
 
 ## Obtaining credentials
 Create an account on [dataspace copernicus](https://dataspace.copernicus.eu) to authenticate your application with the Copernicus Data Space API to obtain an access token.
