@@ -14,17 +14,17 @@ This Python script automates the search and download of Sentinel-2 images (L1C l
 - Copernicus S3 access (AWS Access Key/Secret)</br>
 - Python packages: oauthlib, requests-oauthlib, requests, boto3, shutil </br>
 - Create a user_inputs.py file with your login credentials. </br>
-- 
+
 ## Install the necessary libraries
 pip install oauthlib requests-oauthlib requests boto3
 
 ## Path configuration
 Modify these variables in the script according to your folder structure:
 
-- download_folder: temporary folder for initial download </br>
-- folder_path: folder for saving text and JSON query files </br>
-- sentinel_2_folder: where .SAFE files are stored immediately after download </br>
-- data_sentinel_folder: final structured destination for .SAFE files </br>
+- **download_folder:** temporary folder for initial download </br>
+- **folder_path:** folder for saving text and JSON query files </br>
+- **sentinel_2_folder:** where .SAFE files are stored immediately after download </br>
+- **data_sentinel_folder:** final structured destination for .SAFE files </br>
 
 ## Obtaining credentials
 Create an account on [dataspace copernicus](https://dataspace.copernicus.eu) to authenticate your application with the Copernicus Data Space API to obtain an access token.
