@@ -16,7 +16,7 @@ This Python script automates the search and download of Sentinel-2 images (L1C l
 - Create a user_inputs.py file with your login credentials. </br>
 
 ## Install the necessary libraries
-pip install oauthlib requests-oauthlib requests boto3
+<pre> ```bash pip install oauthlib requests-oauthlib requests boto3 ``` </pre>
 
 ## Path configuration
 Modify these variables in the script according to your folder structure:
