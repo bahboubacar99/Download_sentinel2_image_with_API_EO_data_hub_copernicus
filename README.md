@@ -1,5 +1,5 @@
 # Automated Download of Sentinel-2 Data from Copernicus Data Space
-This Python script automates the search and download of Sentinel-2 images (L1C level) from the Copernicus Data Space Ecosystem. The data is filtered by geographical area, date range and cloud cover rate, then retrieved via S3 URLs and organised locally in a structured manner.
+This Python script automates the search and download of Sentinel-2 images (L1C level or L2A) from the Copernicus Data Space Ecosystem. The data is filtered by geographical area, date range and cloud cover rate, then retrieved via S3 URLs and organised locally in a structured manner.
 
 ## Features
 - OAuth2 authentication and Keycloak token retrieval for Copernicus APIs.
